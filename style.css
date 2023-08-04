@@ -10,83 +10,312 @@ Version: 2.7.1.1683724551
 Updated: 2023-05-10 15:15:51
 
 */
-/* Pg acceuil courbure 1er img  */
-.courbure {
-    height:40px;
-    width:100%;
-    background: #ECE2DA;
-    border-radius: 0 0 60% 60%;
-    box-shadow: 0 10px 0 #E3D9D0;
-  }
-  
-  
-  
-  /* Pg Ns rencontrer formulaire */
-  
-  .label2 {
-  text-align:center;
-  }
-  
-  .titreform {
-      font-family: Syne;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 36px;
-  letter-spacing: 0em;
-  text-align: center;
-      color: #000;
-  
-  }
-  
-  .champs {
-  font-family: Syne;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #000;
-  }
-  
-  
-  div p input {
-  width: 343px !important;
-  height: 55px;
-  border-radius: 7px !important;
-  border:none;
-  box-shadow: 0px 4px 14px 0px #0000000A;
-  border: none !important;
-  }
-  
-  textarea {
-      border:none;
-  }
-  
-  
-  div .bouton2  {
-  display: flex;
-      justify-content: center;
-      margin-bottom:70px;
-  }
-  
-  div .bouton2 p input {
-  color: #FFF;
-  font-family: Syne;
-  font-size: 15px;
-  font-weight: 400;
-  text-align: center;
-      
-  width: 198px !important;
-  height: 55px;
-  top: 1675px;
-  left: 621px;
-  padding: 9px 0px 9px 0px;
-  border-radius: 5px;
-  background: #E0B9B4;
-  
-  }
-  
-  div .bouton2 p input:hover {
-      background: #C02E44;
-  
-  }
+
+body {
+    max-width:1200px;
+    margin: 0 auto;
+    }
+    
+    /*  1e formulaire pg cmd  */
+    
+    .fruit_commande {
+        display: flex;
+        flex-direction: row;
+    justify-content:space-around;
+        height: 52px;
+        margin-top: 20px;
+    
+    }
+    
+    .form_commande {
+        display: flex;
+        flex-direction: row;
+        width: 50px;
+    }
+    
+    .form_commande input {
+        width: 50px;
+        color: #000000;
+      border: none;
+        border-radius: 0px;
+        border-radius: 5px 0px 0px 5px
+    
+    }
+    
+    .boutons_modif {
+        display: flex;
+        flex-direction: column;
+        background: #DC9F96;
+        border-radius: 0px 5px 5px 0px;
+        width: 32px;
+    }
+    
+    .boutons_modif button {
+        line-height:10px;
+        color: #FFFFFF;
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        margin: 0;
+        border: none;
+        border-radius: 0px;
+    }
+    
+    .boutons_modif button:hover {
+        background:none;
+    }
+    
+    .boutons_modif button.plus {
+        border-bottom: 1px solid #FFFFFF;
+    }
+    
+    .ok {
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        background: #E0B9B4;
+      color: #FFFFFF;
+        width: 40%;
+        font-family: syne;
+      font-weight: 400;
+      font-size: 15px;
+        border: none;
+    }
+    
+    .ok:hover {
+        background: #C02E44;
+    }
+    
+    @media (max-width:968px){
+        #form-cmd {
+        flex-direction: column;
+            
+        }
+    .colonne2 {
+            padding-left: 0;	}
+    div .bouton {
+        padding-left: 0px
+        }
+        
+        .ok {
+            margin-left: 10px;
+                width: 23%;
+        }
+    }
+    
+    @media (max-width:766px){
+        .fruit_commande {
+            margin-bottom: 40px;
+        margin-top: 25px;
+        }
+    }
+    
+    /* 2e formulaire, pg cmd  */
+    
+    #form-cmd {
+        display: flex;
+        flex-direction: row;
+        column-gap: 40px;
+      justify-content:center;
+    
+    }
+    
+    p.titre {
+    font-family: Syne;
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFF;
+        margin-top: -30px
+    }
+    
+    p label {
+    font-family: Syne;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #FFF;
+        margin-bottom: 12px;
+    }
+    
+    
+    #form-cmd input {
+    background: #FFF;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04);
+    height: 53px;
+    border-radius: 7px;
+        margin-top: 15px;
+        border:none;
+    }
+    
+    .colonne2 {
+        border-left: 1px solid #FFFFFF;
+        padding-left: 4%;
+    }
+    
+    div .bouton p input {
+        color: #FFF;
+        font-family: Syne;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 37px;
+    text-align: center;
+    background: #E0B9B4;
+    width: 198px !important;
+        border:none;
+        border-radius: 5px;
+    }
+    
+    div .bouton  {
+    display: flex;
+        justify-content: center;
+        margin-top:20px;
+        margin-bottom:70px
+    }
+    
+    div .bouton p input:hover {
+    background: #C02E44;
+    }
+    
+    @media (max-width:766px){
+        #form-cmd {
+            display:flex;
+            flex-direction: column;
+    
+        }
+        .colonne2 {
+            border-left: none;
+            padding-left:0px;
+        }
+        
+    }
+    
+    @media (max-width:766px){
+        .colonne1 {
+            padding-right:30px;
+        }
+        .colonne2 {
+            padding-right:30px;
+        }
+        
+        
+        p.titre {
+            padding-left: 0px;
+        }
+        div .bouton p input {
+            width: 125px;
+        }
+    .elementor-370 .elementor-element.elementor-element-5bae1d2:not(.elementor-motion-effects-element-type-background), .elementor-370 .elementor-element.elementor-element-5bae1d2 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+            display:flex;
+    
+    justify-content:center;
+        }
+    }
+    /* form pg rencontrer */
+    
+    .form-contact {
+        padding-left: 380px;
+    }
+    
+    .titre {
+    font-family: Syne;
+    font-size: 30px;
+    font-weight: 700;
+    padding-left:55px;
+    color: #000;
+    
+    }
+    
+    .label {
+        color: #000;
+    font-family: Syne;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    }
+    
+    
+    /* Bouton commander,pg rencontrer */
+    .comments-area a, .page-content a {
+        text-decoration:none;
+    }
+    /* Pg acceuil courbure 1er img  */
+    .courbure {
+      height:40px;
+      width:100%;
+      background: #ECE2DA;
+      border-radius: 0 0 60% 60%;
+      box-shadow: 0 10px 0 #E3D9D0;
+    }
+    
+    
+    
+    /* Pg Ns rencontrer formulaire */
+    
+    .label2 {
+    text-align:center;
+    }
+    
+    .titreform {
+        font-family: Syne;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+        color: #000;
+    
+    }
+    
+    .champs {
+    font-family: Syne;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000;
+    }
+    
+    
+    div p input {
+    width: 343px !important;
+    height: 55px;
+    border-radius: 7px !important;
+    border:none;
+    box-shadow: 0px 4px 14px 0px #0000000A;
+    border: none !important;
+    }
+    
+    textarea {
+        border:none;
+    }
+    
+    
+    div .bouton2  {
+    display: flex;
+        justify-content: center;
+        margin-bottom:70px;
+    }
+    
+    div .bouton2 p input {
+    color: #FFF;
+    font-family: Syne;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+        
+    width: 198px !important;
+    height: 55px;
+    top: 1675px;
+    left: 621px;
+    padding: 9px 0px 9px 0px;
+    border-radius: 5px;
+    background: #E0B9B4;
+    
+    }
+    
+    div .bouton2 p input:hover {
+        background: #C02E44;
+    
+    }
