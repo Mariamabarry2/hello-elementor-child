@@ -21,7 +21,7 @@ if ( !function_exists( 'child_theme_configurator_css' ) ):
 endif;
 add_action( 'wp_enqueue_scripts', 'child_theme_configurator_css', 10 );
 
-// END ENQUEUE PARENT ACTION
+// HOOK POUR LE LIEN ADMIN
 
 add_filter( 'wp_nav_menu_items', 'menu_admin', 10, 2 );
  function menu_admin( $items, $args ) {
